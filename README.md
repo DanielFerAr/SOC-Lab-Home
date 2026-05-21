@@ -1,4 +1,4 @@
-# Laboratorio SOC Casero con Splunk
+<img width="500" height="276" alt="image" src="https://github.com/user-attachments/assets/cb901f37-ec46-4eaa-99e9-066598e91faa" /><img width="500" height="276" alt="image" src="https://github.com/user-attachments/assets/35be11fa-4834-4c36-817a-68063f34e71e" /># Laboratorio SOC Casero con Splunk
 
 ## Descripción General
 
@@ -91,43 +91,63 @@ Máquina objetivo y plataforma de monitoreo.
 ### 1. Configuración de VirtualBox
 Se configuraron las máquinas virtuales con:
 
-• Adaptador Internal Network
+Adaptador Internal Network
 
-**Windows 10**
+** • Windows 10**
 
 <img width="817" height="427" alt="image" src="https://github.com/user-attachments/assets/7f3f35c1-3f37-4dfb-ae7a-83bf159af48e" />
 
 
 
 
-**Kali**
+** • Kali**
 
 <img width="812" height="450" alt="image" src="https://github.com/user-attachments/assets/0389315c-1c96-4865-9dc5-dee6ccaf67b0" />
 
 
 
-• Configuramos el direccionamiento IP de cada maquina
+Configuramos el direccionamiento IP de cada maquina
 
-**Windows 10 - Se configura el direccionamiento IP a 192.168.99.10**
+** • Windows 10 - Se configura el direccionamiento IP a 192.168.99.10**
 
 <img width="397" height="459" alt="image" src="https://github.com/user-attachments/assets/058543eb-9a5e-4f34-a281-0ef1249e23ed" />
 
 
 
 
-**Kali Linux - Se configura el direccionamiento IP a 192.168.99.11**
+** • Kali Linux - Se configura el direccionamiento IP a 192.168.99.11**
 
 <img width="730" height="279" alt="image" src="https://github.com/user-attachments/assets/b1fca61b-5112-490a-b005-b51c75f69c67" />
 
 
 ### 2. Instalación de Splunk Enterprise
 
+Splunk Enterprise se instala en Windows 10 para actuar como plataforma SIEM.
+
+Se instala en Windows 10 con acceso a Local System.
+<img width="599" height="437" alt="image" src="https://github.com/user-attachments/assets/2ad5c500-07bc-4230-84c2-4b2d3e64c8ed" />
+
+Se define el user y la contraseña para Splunk.
+<img width="614" height="424" alt="image" src="https://github.com/user-attachments/assets/14ff0cef-d654-42bc-a1af-1510bc360226" />
 
 
-Configuramos el Laboratorio casero en el Centro de Operaciones de Seguridad(SOC).
+### 3. Instalación y Configuracion de Sysmon
+Sysmon fue instalado para ampliar la telemetría nativa de Windows.
 
-Elegimos como entorno de virtualizacion VirtualBox, donde alojaremos las maquinas virtuales (VMs) que usaremos en el laboratorio.
+3. 1 Descarga e instalación de Sysmon v15.2:
 
-<img width="771" height="312" alt="image" src="https://github.com/user-attachments/assets/9ea0892f-4b65-4e2e-b10f-8f27c0243227" />
+<img width="500" height="276" alt="image" src="https://github.com/user-attachments/assets/db119e43-1dab-4fa1-bf4f-37e451db2e8f" />
+
+3.2 Configuración de Sysmon: Para configurar Sysmon, usaremos la configuración de Olaf. Abre el archivo RAW, haz clic derecho y guarda el archivo como "sysmonconfig", y guárdalo en el archivo Sysmon extraído. https://github.com/olafhartong/sysmon-modular/blob/a9ff298f6d228c181be71b213c73d111c6096f41/sysmonconfig.xml.
+
+3.3 Copia la dirección de ruta del archivo Sysmon en tus descargas. A continuación, abre "Windows PowerShell" y ejecuta como administrador.
+
+<img width="678" height="194" alt="image" src="https://github.com/user-attachments/assets/66be440e-dcb9-49d8-981a-e11d4986f48d" />
+
+3.4 Escribe "cd + dirección de ruta", y después escribe ".\Sysmon64.exe -i .\sysmonconfig.xml" para instalar Sysmon.
+
+<img width="519" height="37" alt="image" src="https://github.com/user-attachments/assets/b0580875-5520-4cfd-a745-fd4716e8a16e" />
+
+
 
 Creamos una maquina virtual 
