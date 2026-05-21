@@ -26,13 +26,69 @@ El laboratorio fue diseñado para simular un entorno básico de Blue Team / SOC 
 
 | Componente  | Función |
 | ------------- | ------------- |
-| VirtualBox  | Content Cell  |
-| Kali Linux  | Content Cell  |
-| Windows 10  | Content Cell  |
-| Splunk Enterprise | Content Cell  |
+| VirtualBox  | Plataforma de virtualización |
+| Kali Linux  | Máquina atacante  |
+| Windows 10  | Máquina objetivo y servidor SIEM  |
+| Splunk Enterprise | SIEM y visualización  |
 
 
+### Diagrama de la Infraestructura utilizada
 <img width="741" height="601" alt="SOCLABHOME drawio (1)" src="https://github.com/user-attachments/assets/0696cf74-239b-44fa-a48d-44d0e2eefb18" />
+
+### Topología de Red
+El laboratorio fue configurado utilizando:
+
+• Adaptador Internal Network -> comunicacion privada entre maquinas virtuales.
+
+Esto permitio:
+
+• Comunicación entre las VMs.
+
+• Aislamiento de la red principal del host.
+
+# Máquinas Virtuales
+
+## Kali Linux
+
+### Funciónes
+• Reconocimiento.
+
+• Escaneo de puertos.
+
+• Generación de tráfico.
+
+• Simulación de actividad ofensiva.
+
+### Herramientas utilizadas
+• Nmap
+
+• Ping
+
+• Comandos de red Linux
+
+## Windows 10
+
+### Función
+Máquina objetivo y plataforma de monitoreo.
+
+### Componentes instalados
+• Splunk Enterprise
+
+• Sysmon
+
+
+### Funciones principales
+• Recepción y análisis de eventos.
+
+• Registro de procesos.
+
+• Registro de conexiones.
+
+• Visualización mediante dashboards.
+
+# Implementación del Laboratorio
+
+
 
 Configuramos el Laboratorio casero en el Centro de Operaciones de Seguridad(SOC).
 
