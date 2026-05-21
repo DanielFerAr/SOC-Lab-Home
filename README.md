@@ -1,8 +1,21 @@
 # Laboratorio SOC Casero con Splunk
 
-# Descripción General
+## Descripción General
 
 Creacion de laboratorio SOC casero e implementacion de Dashboards.
+
+Este proyecto documenta la implementación de un laboratorio SOC (Security Operations Center) casero utilizando máquinas virtuales (VMs) en VirtualBox. El objetivo principal fue construir un entorno funcional para practicar monitoreo, generación de telemetría, detección de actividad sospechosa y visualización de eventos de seguridad utilizando Splunk Enterprise.
+
+El laboratorio fue diseñado para simular un entorno básico de Blue Team / SOC Analyst, donde una máquina atacante genera actividad sospechosa y otra máquina registra y visualiza los eventos.
+
+## Objetivos del Proyecto
+
+• Implementar un laboratorio SOC funcional utilizando máquinas virtuales.
+• Configurar comunicación entre máquinas virtuales.
+• Centralizar y visualizar eventos mediante Splunk Enterprise.
+• Simular actividad ofensiva básica desde Kali Linux.
+• Diseñar dashboards para monitoreo y análisis.
+• Comprender el flujo de eventos dentro de un entorno SIEM.
 
 <img width="741" height="601" alt="SOCLABHOME drawio (1)" src="https://github.com/user-attachments/assets/0696cf74-239b-44fa-a48d-44d0e2eefb18" />
 
