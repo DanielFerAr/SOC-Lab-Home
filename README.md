@@ -1,4 +1,7 @@
-# SOC-Lab-Home
+# Laboratorio SOC Casero con Splunk
+
+# Descripción General
+
 Creacion de laboratorio SOC casero e implementacion de Dashboards.
 
 <img width="741" height="601" alt="SOCLABHOME drawio (1)" src="https://github.com/user-attachments/assets/0696cf74-239b-44fa-a48d-44d0e2eefb18" />
