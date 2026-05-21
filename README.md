@@ -88,6 +88,31 @@ Máquina objetivo y plataforma de monitoreo.
 
 # Implementación del Laboratorio
 
+### 1. Configuración de VirtualBox
+Se configuraron las máquinas virtuales con:
+
+• Adaptador Internal Network
+
+Windows 10
+<img width="817" height="427" alt="image" src="https://github.com/user-attachments/assets/7f3f35c1-3f37-4dfb-ae7a-83bf159af48e" />
+
+
+
+Kali
+<img width="812" height="450" alt="image" src="https://github.com/user-attachments/assets/0389315c-1c96-4865-9dc5-dee6ccaf67b0" />
+
+
+
+• Configuramos el direccionamiento IP de cada maquina
+
+Windows 10 - Se configura el direccionamiento IP a 192.168.99.10
+<img width="397" height="459" alt="image" src="https://github.com/user-attachments/assets/058543eb-9a5e-4f34-a281-0ef1249e23ed" />
+
+Kali Linux - Se configura el direccionamiento IP a 192.168.99.11
+<img width="730" height="279" alt="image" src="https://github.com/user-attachments/assets/b1fca61b-5112-490a-b005-b51c75f69c67" />
+
+Se verificó:
+
 
 
 Configuramos el Laboratorio casero en el Centro de Operaciones de Seguridad(SOC).
