@@ -1,4 +1,4 @@
-<img width="500" height="276" alt="image" src="https://github.com/user-attachments/assets/cb901f37-ec46-4eaa-99e9-066598e91faa" /><img width="500" height="276" alt="image" src="https://github.com/user-attachments/assets/35be11fa-4834-4c36-817a-68063f34e71e" /># Laboratorio SOC Casero con Splunk
+# Laboratorio SOC Casero con Splunk
 
 ## Descripción General
 
