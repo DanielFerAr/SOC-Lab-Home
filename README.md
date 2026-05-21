@@ -125,9 +125,11 @@ Configuramos el direccionamiento IP de cada maquina
 Splunk Enterprise se instala en Windows 10 para actuar como plataforma SIEM.
 
 Se instala en Windows 10 con acceso a Local System.
+
 <img width="599" height="437" alt="image" src="https://github.com/user-attachments/assets/2ad5c500-07bc-4230-84c2-4b2d3e64c8ed" />
 
 Se define el user y la contraseña para Splunk.
+
 <img width="614" height="424" alt="image" src="https://github.com/user-attachments/assets/14ff0cef-d654-42bc-a1af-1510bc360226" />
 
 
@@ -148,6 +150,7 @@ Sysmon fue instalado para ampliar la telemetría nativa de Windows.
 
 <img width="519" height="37" alt="image" src="https://github.com/user-attachments/assets/b0580875-5520-4cfd-a745-fd4716e8a16e" />
 
+### Simulación de Ataques
 
 
 Creamos una maquina virtual 
