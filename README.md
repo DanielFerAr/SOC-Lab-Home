@@ -150,7 +150,39 @@ Sysmon fue instalado para ampliar la telemetría nativa de Windows.
 
 <img width="519" height="37" alt="image" src="https://github.com/user-attachments/assets/b0580875-5520-4cfd-a745-fd4716e8a16e" />
 
-### Simulación de Ataques
+### 4. Simulación de Ataques
+Desde Kali Linux se realizaron actividades ofensivas básicas.
+
+nmap -A -T5 192.168.99.11
+
+<img width="639" height="295" alt="image" src="https://github.com/user-attachments/assets/4b0def56-3008-42a7-be84-bcde7a7de379" />
+
+Ahora desde Splunk detectaresmos estas conexiones y procesos.
+
+# Detección y Monitoreo
+
+## Detección del IP atacante
+
+Utilizamos para detectar el IP la siguiente busqueda:
+
+index=main EventCode=3
+| stats count by SourceIp
+| sort -count
+
+<img width="650" height="302" alt="image" src="https://github.com/user-attachments/assets/c2e7215d-c830-4941-ab49-67b932fc7691" />
+
+Vemos que la conexion diferente es el IP 192.168.99.11.
+
+## Detección de los ataques de esa IP atacante
+
+Utilizamos para detectar los ataques la siguiente busqueda:
+
+index=main EventCode=3 SourceIp="192.168.99.11"
+| table _time, SourceIp, DestinationIp, DestinationPort
+| sort -_time
 
 
+<img width="650" height="318" alt="image" src="https://github.com/user-attachments/assets/0f632ba8-886d-4ea7-b55c-0bf3041cb0e6" />
+
+# Dashboards Implementados
 Creamos una maquina virtual 
