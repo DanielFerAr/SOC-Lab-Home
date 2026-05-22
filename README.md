@@ -232,5 +232,18 @@ Visualizacion de:
 <img width="1803" height="187" alt="image" src="https://github.com/user-attachments/assets/af7656de-93fc-4370-9a98-8f393dd3ca79" />
 
 
+# Resultados Obtenidos
+### Logros del laboratorio
+• Implementación exitosa de un laboratorio SOC funcional.
+
+• Generación de telemetría mediante Sysmon.
+
+• Ingesta de eventos en Splunk.
+
+• Visualización de actividad ofensiva.
+
+• Creación de dashboards personalizados.
+
+• Detección de escaneos realizados desde Kali Linux.
 
 Creamos una maquina virtual 
