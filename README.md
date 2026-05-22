@@ -246,4 +246,38 @@ Visualizacion de:
 
 • Detección de escaneos realizados desde Kali Linux.
 
-Creamos una maquina virtual 
+
+#Conclusión
+
+Este laboratorio permitió construir una base sólida en conceptos de Blue Team y operaciones SOC utilizando herramientas ampliamente utilizadas en la industria.
+
+El proyecto ayudó a comprender:
+
+• cómo se genera telemetría,
+
+• cómo se centralizan eventos,
+
+• cómo funciona un SIEM,
+
+• cómo detectar actividad sospechosa,
+
+• y cómo diseñar visualizaciones para monitoreo de seguridad.
+
+
+Además, permitió adquirir experiencia práctica en:
+
+• Splunk Enterprise,
+
+• Sysmon,
+
+• redes virtuales,
+
+• análisis de eventos,
+
+• y troubleshooting de infraestructura.
+
+Este laboratorio representa una primera aproximación práctica a un entorno SOC real orientado a Blue Team y Threat Hunting.
+
+Autor
+
+Mg. Daniel Fernandez
