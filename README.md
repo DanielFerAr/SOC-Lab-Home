@@ -93,14 +93,14 @@ Se configuraron las máquinas virtuales con:
 
 Adaptador Internal Network
 
-** • Windows 10**
+**• Windows 10**
 
 <img width="817" height="427" alt="image" src="https://github.com/user-attachments/assets/7f3f35c1-3f37-4dfb-ae7a-83bf159af48e" />
 
 
 
 
-** • Kali**
+**• Kali**
 
 <img width="812" height="450" alt="image" src="https://github.com/user-attachments/assets/0389315c-1c96-4865-9dc5-dee6ccaf67b0" />
 
@@ -108,14 +108,14 @@ Adaptador Internal Network
 
 Configuramos el direccionamiento IP de cada maquina
 
-** • Windows 10 - Se configura el direccionamiento IP a 192.168.99.10**
+**• Windows 10 - Se configura el direccionamiento IP a 192.168.99.10**
 
 <img width="397" height="459" alt="image" src="https://github.com/user-attachments/assets/058543eb-9a5e-4f34-a281-0ef1249e23ed" />
 
 
 
 
-** • Kali Linux - Se configura el direccionamiento IP a 192.168.99.11**
+**• Kali Linux - Se configura el direccionamiento IP a 192.168.99.11**
 
 <img width="730" height="279" alt="image" src="https://github.com/user-attachments/assets/b1fca61b-5112-490a-b005-b51c75f69c67" />
 
@@ -157,7 +157,7 @@ nmap -A -T5 192.168.99.11
 
 <img width="639" height="295" alt="image" src="https://github.com/user-attachments/assets/4b0def56-3008-42a7-be84-bcde7a7de379" />
 
-Ahora desde Splunk detectaresmos estas conexiones y procesos.
+Ahora desde Splunk detectaremos estas conexiones y procesos.
 
 # Detección y Monitoreo
 
@@ -173,7 +173,7 @@ index=main EventCode=3
 
 Vemos que la conexion diferente es el IP 192.168.99.11.
 
-## Detección de los ataques de esa IP atacante
+## Detección de los ataques de la IP atacante
 
 Utilizamos para detectar los ataques la siguiente busqueda:
 
@@ -185,4 +185,52 @@ index=main EventCode=3 SourceIp="192.168.99.11"
 <img width="650" height="318" alt="image" src="https://github.com/user-attachments/assets/0f632ba8-886d-4ea7-b55c-0bf3041cb0e6" />
 
 # Dashboards Implementados
+Se diseñan 3 dashboards personalizados para Splunk:
+## Dashboard 1 - Monitoreo de Procesos
+Visualizacion de:
+
+• Procesos ejecutados.
+
+• Frecuencia de ejecución.
+
+• Actividad del sistema.
+
+
+<img width="566" height="256" alt="image" src="https://github.com/user-attachments/assets/3cd680f9-2696-4c1a-b3ba-f013211e8482" />
+
+<img width="1816" height="644" alt="image" src="https://github.com/user-attachments/assets/851a7908-eb57-48c2-827f-8ccd29a958a4" />
+
+
+## Dashboard 2 - Conexiones de Red
+Visualizacion de:
+
+• IPs origen.
+
+• Puertos escaneados.
+
+• Conexiones destacadas.
+
+• Actividad de red.
+
+
+<img width="557" height="244" alt="image" src="https://github.com/user-attachments/assets/c11803ab-ca1d-43a6-a41b-01f6cdaa5760" />
+
+<img width="1823" height="292" alt="image" src="https://github.com/user-attachments/assets/c5594389-a021-4f2b-9f3a-d403e4194437" />
+
+## Dashboard 3 - Actividad de Seguridad
+Visualizacion de:
+
+• Eventos Sysmon.
+
+• Eventos sospechosos.
+
+• Actividad ofensiva generada desde Kali.
+
+
+<img width="557" height="236" alt="image" src="https://github.com/user-attachments/assets/da3c66ca-f368-4012-857c-03a134b98bd1" />
+
+<img width="1803" height="187" alt="image" src="https://github.com/user-attachments/assets/af7656de-93fc-4370-9a98-8f393dd3ca79" />
+
+
+
 Creamos una maquina virtual 
